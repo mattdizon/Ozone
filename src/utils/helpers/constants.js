@@ -1,0 +1,6 @@
+export const BASE_URL = 'https://staging.ozone.ai/api/v1'
+export const LOGIN = 'auth/sign_in'
+export const SIGNUP = 'auth'
+export const COUPONS = 'coupons'
+export const SURVEYS = 'surveys'
+export const SIGNOUT = 'sign_out'
