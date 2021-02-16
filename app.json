@@ -1,0 +1,12 @@
+{
+  "name": "Ozone",
+  "displayName": "Ozone",
+  "expo": {
+    "name": "Ozone",
+    "slug": "Ozone",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
