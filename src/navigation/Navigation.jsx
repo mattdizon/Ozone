@@ -27,7 +27,7 @@ export const  Navigation = () => {
 		  RootNavigation(LOGIN)
 	}
     return (
-		 <NavigationContainer ref={navigationRef}>{}
+		 <NavigationContainer ref={navigationRef}>
 			 <Stack.Navigator>
 			 <Stack.Screen
                     name={LOGIN}
