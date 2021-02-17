@@ -1,5 +1,6 @@
 import axios from 'axios'
 import { BASE_URL, LOGIN  } from '../../utils/helpers/constants'
+import { createTwoButtonAlert } from '../../components/Alert/Alert'
 export const signInAction = async ( email, password ) => {
     let result
     try {
@@ -21,6 +22,10 @@ export const signInAction = async ( email, password ) => {
         me: me
       }
     } catch (error) {
-      console.log('error signing in..')
+      return (
+        createTwoButtonAlert({
+          title: "Error Signing In"
+        })
+     )
     }
 }

@@ -7,8 +7,6 @@ import { signInAction } from './service'
 import { useNavigation } from '@react-navigation/native';
 import { Context } from '../../provider/AppProvider'
 import { ISAUTH, SIGNUP } from '../../utils/helpers/routes';
-import { getDeals } from '../Deals/services';
-import { getSurveys } from '../Earn/services';
 
 export const  Login = () =>  {
     
@@ -18,19 +16,12 @@ export const  Login = () =>  {
     const myContext = useContext(Context)
 
     const signIn = async(email, password) => {
-        const signInData = await signInAction(email, password)
+        const signInData = await signInAction(email, password) 
 
         myContext.setAccessToken(signInData.accessToken)
         myContext.setClient(signInData.client)
         myContext.setMe(signInData.me)
-
-        let surveys = await getSurveys( myContext.accessToken, myContext.client, myContext.me.uid)
-        myContext.setCompletedSurveys(surveys.completedSurveys)
-        myContext.setIncompleteSurveys(surveys.incompleteSurveys)
-
-        // let deals = await getDeals( myContext.accessToken, myContext.client, myContext.me.uid)
-        // myContext.setCoupons(deals.coupons)
-        
+ 
         navigation.reset({
             index: 0,
             routes: [{ name: ISAUTH }],
@@ -54,7 +45,7 @@ export const  Login = () =>  {
             <Text 
                 style={loginStyles.forgotPassword}
                 onPress={()=> navigation.navigate(SIGNUP)}
-            >Forgot Password</Text>
+            >Sign Up</Text>
             <Button 
                 mode="contained" 
                 onPress={() => {

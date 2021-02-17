@@ -1,5 +1,6 @@
 import axios from 'axios'
 import { BASE_URL, SIGNUP } from '../../utils/helpers/constants'
+import { createTwoButtonAlert } from '../../components/Alert/Alert'
 
 export const signUp = async ( email, password ) => {
     let data
@@ -13,10 +14,10 @@ export const signUp = async ( email, password ) => {
         }
       })
     .then(resp => data = resp)
-    const  accessToken = data.headers["access-token"]
-    const client = data.headers["client"]
 
     } catch (error) {
-      console.log('error signing in')
+      createTwoButtonAlert({
+        title: "Error Signing Up"
+      })
     }
 }
