@@ -3,7 +3,7 @@ import { FlatList, SafeAreaView, View } from 'react-native'
 import SurveyCard from '../../components/SurveyCard'
 import { Context } from '../../provider/AppProvider'
 import { getSurveys } from './services'
-
+import { toString } from 'lodash'
 export const Surveys = () => {
     const myContext = useContext(Context)
     const [isLoading, setIsLoading] = useState(false)
@@ -33,7 +33,7 @@ export const Surveys = () => {
                     style={{ flexGrow: 0}} 
                     data={myContext.incompleteSurveys} 
                     renderItem={renderSurveyCard}
-                    keyExtractor={(item) => item.id}
+                    keyExtractor={(item) => toString(item.id)}
                 />
             </View>
         </SafeAreaView>

@@ -3,6 +3,7 @@ import { FlatList, SafeAreaView, View } from 'react-native'
 import { Context } from '../../provider/AppProvider'
 import { getDeals } from './services'
 import Coupon from './components/Coupon'
+import { toString } from 'lodash'
 
 export const Deals = () => {
     const myContext = useContext(Context)
@@ -14,7 +15,7 @@ export const Deals = () => {
             let couponData = await getDeals( myContext.accessToken, myContext.client, myContext.uid)
             myContext.setCoupons(couponData)
         }
-d   }
+   }
    
    useEffect(()=> {
     getData()
@@ -31,7 +32,7 @@ d   }
                     style={{ flexGrow: 0}} 
                     data={myContext.coupons} 
                     renderItem={renderCoupon}
-                    keyExtractor={(item) => item.id}
+                    keyExtractor={(item) =>toString(item.id)}
                 />
             </View>
         </SafeAreaView>
