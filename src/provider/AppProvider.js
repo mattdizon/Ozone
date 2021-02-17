@@ -8,6 +8,8 @@ const context = {
 	client: '',
 	setClient: () => {},
 	completedSurveys:[],
+	uid:'',
+	setUid: () => {},
 	setCompletedSurveys:() => {},
 	incompleteSurveys:[],
 	setIncompleteSurveys:() => {},
@@ -25,6 +27,7 @@ export const Provider = (props) => {
 	const [completedSurveys, setCompletedSurveys] = useState()
 	const [incompleteSurveys, setIncompleteSurveys] = useState()
 	const [coupons, setCoupons] = useState()
+	const [uid, setUid] = useState()
 	
 	return (
 		<Context.Provider
@@ -43,6 +46,8 @@ export const Provider = (props) => {
 				setIncompleteSurveys,
 				coupons,
 				setCoupons,
+				uid,
+				setUid
 			}}
 		>
 			{props.children}

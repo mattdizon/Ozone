@@ -11,11 +11,10 @@ export const Deals = () => {
     const getData = async () => {
         let coupons = myContext.coupons
         if( coupons === undefined ){
-            let couponData = await getDeals( myContext.accessToken, myContext.client, myContext.me.uid)
+            let couponData = await getDeals( myContext.accessToken, myContext.client, myContext.uid)
             myContext.setCoupons(couponData)
         }
-        console.log(myContext)
-   }
+d   }
    
    useEffect(()=> {
     getData()

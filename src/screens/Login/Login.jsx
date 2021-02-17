@@ -21,6 +21,7 @@ export const  Login = () =>  {
         myContext.setAccessToken(signInData.accessToken)
         myContext.setClient(signInData.client)
         myContext.setMe(signInData.me)
+        myContext.setUid(signInData.me.uid)
  
         navigation.reset({
             index: 0,

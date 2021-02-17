@@ -1,13 +1,31 @@
-import React, { useState } from 'react'
-import { SafeAreaView, View, Text } from 'react-native'
+import React, { useState, useContext } from 'react'
+import { SafeAreaView, View } from 'react-native'
 import { TextInput, Button } from 'react-native-paper';
 import { styles } from '../styles'
 import { loginStyles } from '../Login/styles'
-import { signUp } from './service'
+import { signUpAction } from './service'
+import { Context } from '../../provider/AppProvider'
+import { useNavigation } from '@react-navigation/native';
+import { ISAUTH } from '../../utils/helpers/routes';
 export const  SignUp = () =>  {
     
     const [ email, setEmail] = useState('')
     const [ password, setPassword] = useState('')
+    const navigation = useNavigation();
+    const myContext = useContext(Context)
+
+    const signUp = async(email, password) => {
+        const signUpData = await signUpAction(email, password) 
+        myContext.setAccessToken(signUpData.accessToken)
+        myContext.setClient(signUpData.client)
+        myContext.setMe(signUpData.me)
+ 
+        navigation.reset({
+            index: 0,
+            routes: [{ name: ISAUTH }],
+        });
+    }
+
     return (
         <SafeAreaView>
             <View style={ styles.container }>
@@ -28,7 +46,7 @@ export const  SignUp = () =>  {
                 onPress={() => signUp(email, password)}
                 style={loginStyles.loginButton}
             >
-                Login
+                Sign Up
             </Button>
             </View>        
         </SafeAreaView>

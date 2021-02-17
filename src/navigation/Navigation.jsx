@@ -21,7 +21,7 @@ export const  Navigation = () => {
 			headers: {
 			  'client' :myContext. client,
 			  'access-token': myContext.accessToken,
-			  'uid': myContext.me.uid
+			  'uid': myContext.uid
 			},
 		  })
 		  RootNavigation(LOGIN)

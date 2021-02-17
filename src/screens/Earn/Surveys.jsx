@@ -13,7 +13,7 @@ export const Surveys = () => {
         let completedSurveys  = myContext.completedSurveys 
         let incompletedSurveys  = myContext.incompleteSurveys
         if( completedSurveys === undefined && incompletedSurveys === undefined){
-            let surveys = await getSurveys( myContext.accessToken, myContext.client, myContext.me.uid)
+            let surveys = await getSurveys( myContext.accessToken, myContext.client, myContext.uid)
             myContext.setCompletedSurveys(surveys.completedSurveys)
             myContext.setIncompleteSurveys(surveys.incompleteSurveys)
         }
