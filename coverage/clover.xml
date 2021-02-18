@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1613687357889" clover="3.2.0">
-  <project timestamp="1613687357889" name="All files">
-    <metrics statements="228" coveredstatements="135" conditionals="54" coveredconditionals="3" methods="59" coveredmethods="7" elements="341" coveredelements="145" complexity="0" loc="228" ncloc="228" packages="13" files="20" classes="20"/>
+<coverage generated="1613688380915" clover="3.2.0">
+  <project timestamp="1613688380915" name="All files">
+    <metrics statements="227" coveredstatements="145" conditionals="54" coveredconditionals="2" methods="59" coveredmethods="6" elements="340" coveredelements="153" complexity="0" loc="227" ncloc="227" packages="13" files="20" classes="20"/>
     <package name="Ozone">
       <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
       <file name="App.js" path="/Users/mattdizon/Desktop/Ozone/App.js">
@@ -18,8 +18,8 @@
       <metrics statements="6" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
       <file name="SurveyCard.js" path="/Users/mattdizon/Desktop/Ozone/src/components/SurveyCard.js">
         <metrics statements="6" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
-        <line num="1" count="1" type="stmt"/>
-        <line num="2" count="1" type="stmt"/>
+        <line num="1" count="2" type="stmt"/>
+        <line num="2" count="2" type="stmt"/>
         <line num="14" count="0" type="stmt"/>
         <line num="15" count="0" type="stmt"/>
         <line num="21" count="0" type="stmt"/>
@@ -27,14 +27,14 @@
       </file>
     </package>
     <package name="Ozone.src.components.Alert">
-      <metrics statements="5" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="1"/>
+      <metrics statements="5" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="0"/>
       <file name="Alert.js" path="/Users/mattdizon/Desktop/Ozone/src/components/Alert/Alert.js">
-        <metrics statements="5" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="1"/>
-        <line num="1" count="2" type="stmt"/>
-        <line num="2" count="2" type="stmt"/>
-        <line num="4" count="2" type="stmt"/>
+        <metrics statements="5" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="0"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
         <line num="9" count="0" type="stmt"/>
-        <line num="11" count="2" type="stmt"/>
+        <line num="11" count="1" type="stmt"/>
       </file>
     </package>
     <package name="Ozone.src.navigation">
@@ -77,10 +77,10 @@
       <metrics statements="13" coveredstatements="13" conditionals="0" coveredconditionals="0" methods="8" coveredmethods="1"/>
       <file name="AppProvider.js" path="/Users/mattdizon/Desktop/Ozone/src/provider/AppProvider.js">
         <metrics statements="13" coveredstatements="13" conditionals="0" coveredconditionals="0" methods="8" coveredmethods="1"/>
-        <line num="1" count="1" type="stmt"/>
-        <line num="3" count="1" type="stmt"/>
-        <line num="20" count="1" type="stmt"/>
-        <line num="22" count="1" type="stmt"/>
+        <line num="1" count="3" type="stmt"/>
+        <line num="3" count="3" type="stmt"/>
+        <line num="20" count="3" type="stmt"/>
+        <line num="22" count="3" type="stmt"/>
         <line num="24" count="1" type="stmt"/>
         <line num="25" count="1" type="stmt"/>
         <line num="26" count="1" type="stmt"/>
@@ -89,7 +89,7 @@
         <line num="29" count="1" type="stmt"/>
         <line num="30" count="1" type="stmt"/>
         <line num="32" count="1" type="stmt"/>
-        <line num="56" count="1" type="stmt"/>
+        <line num="56" count="3" type="stmt"/>
       </file>
     </package>
     <package name="Ozone.src.screens">
@@ -102,47 +102,47 @@
       </file>
     </package>
     <package name="Ozone.src.screens.Deals">
-      <metrics statements="27" coveredstatements="11" conditionals="13" coveredconditionals="0" methods="9" coveredmethods="0"/>
+      <metrics statements="27" coveredstatements="17" conditionals="13" coveredconditionals="2" methods="9" coveredmethods="1"/>
       <file name="Deals.js" path="/Users/mattdizon/Desktop/Ozone/src/screens/Deals/Deals.js">
-        <metrics statements="21" coveredstatements="8" conditionals="8" coveredconditionals="0" methods="6" coveredmethods="0"/>
-        <line num="1" count="1" type="stmt"/>
-        <line num="2" count="1" type="stmt"/>
-        <line num="3" count="1" type="stmt"/>
-        <line num="4" count="1" type="stmt"/>
-        <line num="5" count="1" type="stmt"/>
-        <line num="6" count="1" type="stmt"/>
-        <line num="8" count="1" type="stmt"/>
-        <line num="9" count="0" type="stmt"/>
-        <line num="10" count="0" type="stmt"/>
-        <line num="12" count="0" type="cond" truecount="0" falsecount="4"/>
+        <metrics statements="21" coveredstatements="14" conditionals="8" coveredconditionals="2" methods="6" coveredmethods="1"/>
+        <line num="1" count="2" type="stmt"/>
+        <line num="2" count="2" type="stmt"/>
+        <line num="3" count="2" type="stmt"/>
+        <line num="4" count="2" type="stmt"/>
+        <line num="5" count="2" type="stmt"/>
+        <line num="6" count="2" type="stmt"/>
+        <line num="8" count="2" type="stmt"/>
+        <line num="9" count="1" type="stmt"/>
+        <line num="10" count="1" type="stmt"/>
+        <line num="12" count="1" type="cond" truecount="0" falsecount="4"/>
         <line num="13" count="0" type="cond" truecount="0" falsecount="2"/>
         <line num="14" count="0" type="stmt"/>
         <line num="15" count="0" type="stmt"/>
         <line num="16" count="0" type="stmt"/>
-        <line num="20" count="0" type="stmt"/>
+        <line num="20" count="1" type="stmt"/>
         <line num="21" count="0" type="stmt"/>
         <line num="22" count="0" type="stmt"/>
-        <line num="25" count="0" type="stmt"/>
-        <line num="27" count="0" type="stmt"/>
+        <line num="25" count="1" type="stmt"/>
+        <line num="27" count="1" type="stmt"/>
         <line num="35" count="0" type="stmt"/>
-        <line num="40" count="1" type="stmt"/>
+        <line num="40" count="2" type="stmt"/>
       </file>
       <file name="services.js" path="/Users/mattdizon/Desktop/Ozone/src/screens/Deals/services.js">
         <metrics statements="6" coveredstatements="3" conditionals="5" coveredconditionals="0" methods="3" coveredmethods="0"/>
-        <line num="1" count="1" type="stmt"/>
-        <line num="2" count="1" type="cond" truecount="0" falsecount="5"/>
+        <line num="1" count="2" type="stmt"/>
+        <line num="2" count="2" type="cond" truecount="0" falsecount="5"/>
         <line num="14" count="0" type="stmt"/>
         <line num="15" count="0" type="stmt"/>
         <line num="16" count="0" type="stmt"/>
-        <line num="18" count="1" type="stmt"/>
+        <line num="18" count="2" type="stmt"/>
       </file>
     </package>
     <package name="Ozone.src.screens.Deals.components">
       <metrics statements="6" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
       <file name="Coupon.js" path="/Users/mattdizon/Desktop/Ozone/src/screens/Deals/components/Coupon.js">
         <metrics statements="6" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
-        <line num="1" count="1" type="stmt"/>
-        <line num="2" count="1" type="stmt"/>
+        <line num="1" count="2" type="stmt"/>
+        <line num="2" count="2" type="stmt"/>
         <line num="17" count="0" type="stmt"/>
         <line num="18" count="0" type="stmt"/>
         <line num="25" count="0" type="stmt"/>
@@ -150,47 +150,47 @@
       </file>
     </package>
     <package name="Ozone.src.screens.Earn">
-      <metrics statements="31" coveredstatements="12" conditionals="13" coveredconditionals="0" methods="9" coveredmethods="0"/>
+      <metrics statements="31" coveredstatements="18" conditionals="13" coveredconditionals="0" methods="9" coveredmethods="1"/>
       <file name="Surveys.js" path="/Users/mattdizon/Desktop/Ozone/src/screens/Earn/Surveys.js">
-        <metrics statements="23" coveredstatements="8" conditionals="8" coveredconditionals="0" methods="6" coveredmethods="0"/>
-        <line num="1" count="1" type="stmt"/>
-        <line num="2" count="1" type="stmt"/>
-        <line num="3" count="1" type="stmt"/>
-        <line num="4" count="1" type="stmt"/>
-        <line num="5" count="1" type="stmt"/>
-        <line num="6" count="1" type="stmt"/>
-        <line num="7" count="1" type="stmt"/>
-        <line num="8" count="0" type="stmt"/>
-        <line num="9" count="0" type="stmt"/>
-        <line num="12" count="0" type="cond" truecount="0" falsecount="4"/>
+        <metrics statements="23" coveredstatements="14" conditionals="8" coveredconditionals="0" methods="6" coveredmethods="1"/>
+        <line num="1" count="2" type="stmt"/>
+        <line num="2" count="2" type="stmt"/>
+        <line num="3" count="2" type="stmt"/>
+        <line num="4" count="2" type="stmt"/>
+        <line num="5" count="2" type="stmt"/>
+        <line num="6" count="2" type="stmt"/>
+        <line num="7" count="2" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="9" count="1" type="stmt"/>
+        <line num="12" count="1" type="cond" truecount="0" falsecount="4"/>
         <line num="13" count="0" type="stmt"/>
         <line num="14" count="0" type="cond" truecount="0" falsecount="2"/>
         <line num="15" count="0" type="cond" truecount="0" falsecount="2"/>
         <line num="16" count="0" type="stmt"/>
         <line num="17" count="0" type="stmt"/>
         <line num="18" count="0" type="stmt"/>
-        <line num="22" count="0" type="stmt"/>
+        <line num="22" count="1" type="stmt"/>
         <line num="23" count="0" type="stmt"/>
         <line num="24" count="0" type="stmt"/>
-        <line num="27" count="0" type="stmt"/>
-        <line num="29" count="0" type="stmt"/>
+        <line num="27" count="1" type="stmt"/>
+        <line num="29" count="1" type="stmt"/>
         <line num="36" count="0" type="stmt"/>
-        <line num="41" count="1" type="stmt"/>
+        <line num="41" count="2" type="stmt"/>
       </file>
       <file name="services.js" path="/Users/mattdizon/Desktop/Ozone/src/screens/Earn/services.js">
         <metrics statements="8" coveredstatements="4" conditionals="5" coveredconditionals="0" methods="3" coveredmethods="0"/>
-        <line num="1" count="1" type="stmt"/>
-        <line num="2" count="1" type="stmt"/>
-        <line num="3" count="1" type="cond" truecount="0" falsecount="5"/>
+        <line num="1" count="2" type="stmt"/>
+        <line num="2" count="2" type="stmt"/>
+        <line num="3" count="2" type="cond" truecount="0" falsecount="5"/>
         <line num="15" count="0" type="stmt"/>
         <line num="16" count="0" type="stmt"/>
         <line num="17" count="0" type="stmt"/>
         <line num="20" count="0" type="stmt"/>
-        <line num="23" count="1" type="stmt"/>
+        <line num="23" count="2" type="stmt"/>
       </file>
     </package>
     <package name="Ozone.src.screens.Login">
-      <metrics statements="42" coveredstatements="27" conditionals="9" coveredconditionals="3" methods="10" coveredmethods="3"/>
+      <metrics statements="41" coveredstatements="25" conditionals="9" coveredconditionals="0" methods="10" coveredmethods="1"/>
       <file name="Login.js" path="/Users/mattdizon/Desktop/Ozone/src/screens/Login/Login.js">
         <metrics statements="28" coveredstatements="17" conditionals="4" coveredconditionals="0" methods="7" coveredmethods="1"/>
         <line num="1" count="1" type="stmt"/>
@@ -223,18 +223,17 @@
         <line num="62" count="1" type="stmt"/>
       </file>
       <file name="service.js" path="/Users/mattdizon/Desktop/Ozone/src/screens/Login/service.js">
-        <metrics statements="11" coveredstatements="7" conditionals="5" coveredconditionals="3" methods="3" coveredmethods="2"/>
-        <line num="1" count="2" type="stmt"/>
-        <line num="2" count="2" type="stmt"/>
-        <line num="3" count="2" type="stmt"/>
-        <line num="4" count="3" type="cond" truecount="3" falsecount="2"/>
-        <line num="6" count="1" type="stmt"/>
+        <metrics statements="10" coveredstatements="5" conditionals="5" coveredconditionals="0" methods="3" coveredmethods="0"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="cond" truecount="0" falsecount="5"/>
+        <line num="15" count="0" type="stmt"/>
         <line num="16" count="0" type="stmt"/>
         <line num="17" count="0" type="stmt"/>
         <line num="18" count="0" type="stmt"/>
-        <line num="19" count="0" type="stmt"/>
-        <line num="23" count="1" type="stmt"/>
-        <line num="28" count="2" type="stmt"/>
+        <line num="22" count="0" type="stmt"/>
+        <line num="27" count="1" type="stmt"/>
       </file>
       <file name="styles.js" path="/Users/mattdizon/Desktop/Ozone/src/screens/Login/styles.js">
         <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
@@ -315,12 +314,12 @@
       <metrics statements="9" coveredstatements="9" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
       <file name="constants.js" path="/Users/mattdizon/Desktop/Ozone/src/utils/helpers/constants.js">
         <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-        <line num="1" count="2" type="stmt"/>
-        <line num="2" count="2" type="stmt"/>
-        <line num="3" count="2" type="stmt"/>
-        <line num="4" count="2" type="stmt"/>
-        <line num="5" count="2" type="stmt"/>
-        <line num="6" count="2" type="stmt"/>
+        <line num="1" count="3" type="stmt"/>
+        <line num="2" count="3" type="stmt"/>
+        <line num="3" count="3" type="stmt"/>
+        <line num="4" count="3" type="stmt"/>
+        <line num="5" count="3" type="stmt"/>
+        <line num="6" count="3" type="stmt"/>
       </file>
       <file name="routes.js" path="/Users/mattdizon/Desktop/Ozone/src/utils/helpers/routes.js">
         <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
