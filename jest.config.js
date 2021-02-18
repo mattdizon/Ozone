@@ -10,7 +10,8 @@ module.exports = {
   coveragePathIgnorePatterns: ['/node_modules/', '/jest'],
   testEnvironment: 'jsdom',
   setupFiles: [
-    "./node_modules/react-native-gesture-handler/jestSetup.js"
+    "./node_modules/react-native-gesture-handler/jestSetup.js",
+    "./jest/setup.js"
 ],
 transformIgnorePatterns: [
     "/node_modules/(?!native-base)/"
