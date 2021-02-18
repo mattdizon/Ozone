@@ -10,6 +10,10 @@
     1. Run Expo Start
     2. Use the UI to determine which platform to run in.
 
+## Testing
+
+    1. yarn test
+
 ## Features
 
     1. Built out only using React/ React Hooks
