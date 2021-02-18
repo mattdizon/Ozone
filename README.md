@@ -12,7 +12,7 @@
 
 ## Testing
 
-    1. yarn test
+    1. yarn test --all
 
 ## Features
 
