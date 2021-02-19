@@ -18,10 +18,12 @@ export const signUpAction = async ( email, password ) => {
   const  accessToken = result.data["access_token"]
   const client = result.data["client"]
   const uid = result.data["uid"]
+  const me = result.data["user"]
     return {
       accessToken: accessToken,
       client: client,
-      uid: uid
+      uid: uid,
+      me: me
     }
   } catch (error) {
     return (

@@ -15,11 +15,10 @@ export const  SignUp = () =>  {
     const myContext = useContext(Context)
 
     const signUp = async(email, password) => {
-        const signUpData = await signUpAction(email, password) 
+        const signUpData = await signUpAction(email, password)
         myContext.setAccessToken(signUpData.accessToken)
         myContext.setClient(signUpData.client)
-        myContext.setMe(signUpData.me)
- 
+        myContext.setUid(signUpData.uid)
         navigation.reset({
             index: 0,
             routes: [{ name: ISAUTH }],
